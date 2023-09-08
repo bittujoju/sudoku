@@ -12,7 +12,9 @@ body, html {
 
 #sudoku-table {
   border-collapse: collapse;
-  width: 270px;
+  width: 270px; 
+  border-left: 3px solid black;
+  border-top: 3px solid black;
 }
 
 #sudoku-table td {
