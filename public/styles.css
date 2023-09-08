@@ -1,0 +1,48 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.sudoku-container {
+  display: flex;
+  justify-content: center; /* Horizontally centers the child elements */
+  align-items: center;     /* Vertically centers the child elements */
+  height: 100%;
+}
+
+#sudoku-table {
+  border-collapse: collapse;
+  width: 270px;
+}
+
+#sudoku-table td {
+  border: 1px solid black;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#sudoku-table input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* Reset thicker borders for all cells */
+#sudoku-table td {
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+}
+
+/* Apply thicker border for every 3rd column */
+#sudoku-table td:nth-child(3n) {
+  border-right-width: 3px;
+}
+
+/* Apply thicker border for every 3rd row */
+#sudoku-table tr:nth-child(3n) td {
+  border-bottom-width: 3px;
+}
